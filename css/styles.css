@@ -12,16 +12,10 @@ body{
 /* GENERAL */
 
 .userInput{
-    height: 2.5rem;
-    width: 80vw;
-    border: none;
-    border-bottom: 1px solid #4A25CF;
+
 }
 
-.userInput::placeholder{
-    color: #4A25CF;
-    padding-left: 1rem;
-}
+
 
 /* ========== CABECERA ========== */
 header#cabecera{
@@ -60,30 +54,30 @@ label{
 label > span.hamburguer-line{
     position: absolute;
     top: 0.5rem;
-    left: .5rem;
+    left: 0.5rem;
     width: 1.2rem;
-    height: .1rem;
+    height: 0.1rem;
     background: white;
-    transition: background 0s .25s;
+    transition: background 0s 0.5s;
 }
 
 label > span.hamburguer-line:nth-child(2){
     top: 1rem;
-    transition: all 1s ease;
+    transition: top 0.5s ease;
 }
 
 label > span.hamburguer-line:nth-child(3){
     top: 1.5rem;
-    transition: all 1s ease;
+    transition: top 0.5s ease;
 }
 
 /* TRANSICIONES MENÚ HAMBURGUESA */
 
 label>input:checked ~ span.hamburguer-line:nth-child(4){
-    transition: top 1s, rotate 1s;
+    transition: top 1s, transform 0.5s;
     top: 1rem;
-    rotate: 45deg;
-    transition-delay: 0s, 1s;
+    transform: rotate(45deg);
+    transition-delay: 0s, 0.5s;
 }
 
 label>input:checked ~ span.hamburguer-line:nth-child(2){
@@ -92,10 +86,25 @@ label>input:checked ~ span.hamburguer-line:nth-child(2){
 }
 
 label>input:checked ~ span.hamburguer-line:nth-child(3){
-    transition: top 1s, rotate 1s;
+    transition: top 1s, transform 0.5s;
     top: 1rem;
-    rotate: -45deg;
-    transition-delay: 0s, 1s;
+    transform: rotate(-45deg);
+    transition-delay: 0s, 0.5s;
+}
+
+/* not checked*/
+label > input:not(:checked) ~ span.hamburguer-line:nth-child(4){
+    transition: transform 0.5s, top 1s; /* Mismo tiempo de transición que al hacer clic */
+    top: 0.5rem; /* Devolver el top a su posición original */
+    transform: rotate(0deg); /* Devolver la rotación a 0 grados */
+    transition-delay: 0s, 0.5s;
+}
+
+label > input:not(:checked) ~ span.hamburguer-line:nth-child(3){
+    transition: transform 0.5s, top 1s; /* Mismo tiempo de transición que al hacer clic */
+    top: 1.5rem; /* Devolver el top a su posición original */
+    transform: rotate(0deg); /* Devolver la rotación a 0 grados */
+    transition-delay: 0s, 0.5s;
 }
 
 /* logo */
@@ -114,7 +123,7 @@ main{
 /* imagen */
 main > picture#imgCabecera{
     width: 100%;
-    height: 6rem;
+    height: 8rem;
     object-fit: cover;
 }
 
@@ -125,16 +134,31 @@ main > picture#imgCabecera  img{
 }
 /* titulo */
 main > h1{
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
     width: 80vw;
     padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    margin-top: 2rem;
 }
 
 /* formulario */
 
 main > form{
 
+}
+
+main > form > p > input{
+    height: 2.5rem;
+    width: 80vw;
+    border: none;
+    border-bottom: 1px solid #4A25CF;
+}
+
+main > form > p > input::placeholder{
+    color: #4A25CF;
+    padding-left: 1rem;
 }
 
 main > form > p{
@@ -145,12 +169,12 @@ main > form > p{
 main > form > p#p-botones{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 main > form > p#p-botones > button{
     border: none;
-    border-radius: 7.5px;
+    border-radius: 5px;
     height: 2.5rem;
     width: 6rem;
     background-color: #085927;
@@ -169,7 +193,8 @@ footer > div#socialMedia-svg{
     width: 100%;
     height: 2rem;
     align-items: center;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -184,4 +209,16 @@ footer > div#form-footer > form{
     display: flex;
     flex-flow: column;
     align-items: center;
+}
+
+footer > div#form-footer > form > p > input{
+    height: 2.5rem;
+    width: 80vw;
+    border: none;
+    border-radius: 5px;
+}
+
+footer > div#form-footer > form > p > input::placeholder{
+    color: black;
+    padding-left: 1rem;
 }
