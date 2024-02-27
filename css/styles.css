@@ -1,0 +1,187 @@
+*{
+    font-size:  16px;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* GENERAL */
+
+.userInput{
+    height: 2.5rem;
+    width: 80vw;
+    border: none;
+    border-bottom: 1px solid #4A25CF;
+}
+
+.userInput::placeholder{
+    color: #4A25CF;
+    padding-left: 1rem;
+}
+
+/* ========== CABECERA ========== */
+header#cabecera{
+    width: 100%;
+    height: 5rem;
+    padding-top: 2rem;
+    display: flex;
+    background-color: #333333;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* flecha atras */
+nav#arrow-back > svg{
+    width: 1.75rem;
+    height: auto;
+    padding-left: 2rem;
+}
+
+/* menú hamburguesa */
+input#hamburguer-icon{
+    display: none;
+}
+
+label{
+    display: inline-block;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+/*     background-color: lightslategray; */
+    background: none;
+    cursor: pointer;
+    padding-right: 2rem;
+}
+
+label > span.hamburguer-line{
+    position: absolute;
+    top: 0.5rem;
+    left: .5rem;
+    width: 1.2rem;
+    height: .1rem;
+    background: white;
+    transition: background 0s .25s;
+}
+
+label > span.hamburguer-line:nth-child(2){
+    top: 1rem;
+    transition: all 1s ease;
+}
+
+label > span.hamburguer-line:nth-child(3){
+    top: 1.5rem;
+    transition: all 1s ease;
+}
+
+/* TRANSICIONES MENÚ HAMBURGUESA */
+
+label>input:checked ~ span.hamburguer-line:nth-child(4){
+    transition: top 1s, rotate 1s;
+    top: 1rem;
+    rotate: 45deg;
+    transition-delay: 0s, 1s;
+}
+
+label>input:checked ~ span.hamburguer-line:nth-child(2){
+    background: none;
+    transition-delay: 0s;
+}
+
+label>input:checked ~ span.hamburguer-line:nth-child(3){
+    transition: top 1s, rotate 1s;
+    top: 1rem;
+    rotate: -45deg;
+    transition-delay: 0s, 1s;
+}
+
+/* logo */
+header#cabecera > nav#logo > svg{
+    width: 5rem;
+    height: auto;
+    order: 2;
+    fill: white;
+}
+/* ========== MAIN ==========*/
+main{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+/* imagen */
+main > picture#imgCabecera{
+    width: 100%;
+    height: 6rem;
+    object-fit: cover;
+}
+
+main > picture#imgCabecera  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* titulo */
+main > h1{
+    font-size: 24px;
+    text-align: center;
+    width: 80vw;
+    padding-top: 1rem;
+}
+
+/* formulario */
+
+main > form{
+
+}
+
+main > form > p{
+    padding: 1rem;
+}
+
+/* botones */
+main > form > p#p-botones{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+main > form > p#p-botones > button{
+    border: none;
+    border-radius: 7.5px;
+    height: 2.5rem;
+    width: 6rem;
+    background-color: #085927;
+    color: white;
+}
+
+/* ========== FOOTER ========== */
+footer{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: #333333;
+}
+
+footer > div#socialMedia-svg{
+    width: 100%;
+    height: 2rem;
+    align-items: center;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+footer > div#form-footer > h2{
+    color: white;
+    text-align: center;
+}
+
+footer > div#form-footer > form{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
