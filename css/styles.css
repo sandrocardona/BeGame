@@ -14,6 +14,7 @@ svg{
     width: 1.75rem;
     height: auto;
 }
+
 /* ==================== CABECERA ==================== */
 header#cabecera{
     width: 100%;
@@ -55,7 +56,6 @@ label > span.hamburguer-line{
 }
 
 /* transiciones menu hamburguesa */
-
 label > span.hamburguer-line:nth-child(2){
     top: 1rem;
     transition: top 0.5s ease;
@@ -119,7 +119,7 @@ main{
 main > picture#imgCabecera{
     width: calc(100% + 2rem);
     margin-left: -2rem;
-    height: 8rem;
+    height: 20%;
 }
 
 main > picture#imgCabecera > img{
@@ -127,17 +127,25 @@ main > picture#imgCabecera > img{
     height: 100%;
     object-fit: cover;
 }
+
 /* titulo */
 main > h1{
     font-size: 20px;
     text-align: center;
     width: 80vw;
-    padding-bottom: 1rem;
+    height: 5%;
+    padding-top: 1.5rem;
 }
 
-/* formulario */
+/* formulario principal */
+main > form{
+    height: 75%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
 main > form > p#p-inputs{
-    padding-left: 2rem;
+    padding-left: 1rem;
     display: flex;
     flex-direction: row;
 }
@@ -158,11 +166,12 @@ main > form > p#p-inputs > svg{
     border-bottom:#4A25CF 1px solid;
 }
 
-/* botones */
+/* botones del formulario */
 main > form > p#p-botones{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-left: 1rem;
 }
 
 main > form > p#p-botones > button{
@@ -175,7 +184,6 @@ main > form > p#p-botones > button{
 }
 
 /* social media icon */
-
 div#socialMedia-svg{
     width: 100%;
     height: 7.5vh;
@@ -210,9 +218,35 @@ footer > div#form-footer > form > p > input{
     width: 80vw;
     border: none;
     border-radius: 5px;
+    padding-left: 1rem;
 }
-
 footer > div#form-footer > form > p > input::placeholder{
     color: black;
+}
+
+footer > div#form-footer > form > p > textarea{
+    width: 80vw;
+    border: none;
+    border-radius: 5px;
     padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+footer > div#form-footer > form > p > textarea::placeholder{
+    color: black;
+    font-family: "Inter", sans-serif;
+}
+/* boton enviar del formulario */
+footer > div#form-footer > form > p#p-boton-form{
+    width: 100%;
+    align-items: left;
+}
+
+footer > div#form-footer > form > p#p-boton-form > button{
+border: none;
+border-radius: 5px;
+height: 2rem;
+width: 6rem;
+background-color: white;
+color: black;
 }
