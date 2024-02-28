@@ -25,6 +25,10 @@ header#cabecera{
     align-items: center;
 }
 
+header#cabecera > * {
+    margin-top: 3rem;
+}
+
 /* flecha atras */
 nav#arrow-back > svg{
     padding-left: 2rem;
