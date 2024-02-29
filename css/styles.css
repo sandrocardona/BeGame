@@ -298,6 +298,8 @@ footer > div#links-footer > p > svg#svg-copyright > path{
     text-align: center;
     font-weight: bold;
     line-height: 13vh;
+    border-radius: 10px;
+    border: 2px solid black;
 }
 
 /* ======================================== fin del css principal ======================================== */

@@ -21,7 +21,7 @@ $(document).ready(function(){
             setTimeout(function(){
                 $("#mensaje").hide();
                 localStorage.removeItem('mensaje');
-            }, 3000);
+            }, 1500);
         }
 
         $("#btnEnviar").click(function(){
