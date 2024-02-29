@@ -163,11 +163,11 @@ main > form > p#p-inputs > input{
     width: 65vw;
     border: none;
     border-bottom: 1px solid #4A25CF;
+    padding-left: 1rem;
 }
 
 main > form > p#p-inputs > input::placeholder{
     color: #4A25CF;
-    padding-left: 1rem;
 }
 
 main > form > p#p-inputs > svg{
@@ -357,6 +357,9 @@ main.general > picture#imgCabecera > img{
     width: 80vw;
     height: 20vh;
     display: flex;
+    flex-flow: column;
+    text-align: center;
+    font-weight: bold;
     padding: 1rem;
     border-radius: 10px;
     margin-top: 1rem;
@@ -383,4 +386,8 @@ main.general > picture#imgCabecera > img{
     width: 10rem;
     background-color: #085927;
     color: white;
+}
+
+#txt-p-crearpartido{
+    padding-top: 1.5rem;
 }

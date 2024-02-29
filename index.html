@@ -44,7 +44,7 @@
 		</picture>
 		<h1 class="h1-margin">Buscar o crear partido</h1>
 		<!-- formulario principal -->
-		<form action="index.html" method="post">
+		<form action="index.html" method="get">
 			<!-- direccion -->
 			<p id="p-inputs">
 				<svg id="svg-ubicacion" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,8 +70,8 @@
 				<input class="userInput" type="text" placeholder="Fecha">
 			</p>
 			<p id="p-botones">
-			<button name="btnCrear" class="btnPequeno">Crear</button>
-			<button name="btnBuscar" class="btnPequeno">Buscar</button>
+			<button type="submit" formaction="./vistas/crearPartido.html" name="btnCrear" class="btnPequeno">Crear</button>
+			<button type="submit" formaction="./vistas/partidosDisponibles.html" name="btnBuscar" class="btnPequeno">Buscar</button>
 			</p>
 		</form>
 	</main>
@@ -128,7 +128,7 @@
 		<!-- formulario de contacto -->
 		<div id="form-footer">
 			<h2>¿Tienes alguna duda?</h2>
-			<form action="index.html" method="post">
+			<form action="index.html" method="get">
 				<p>
 					<input class="userInput" type="text" placeholder="Email">
 				</p>
