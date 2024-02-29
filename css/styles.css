@@ -361,12 +361,10 @@ main.general > picture#imgCabecera > img{
 .tarjeta-partidos > div{
     flex: 2;
     margin-left: 1.5rem;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
 }
 
 .tarjeta-partidos > div > p{
+    padding-top: 0.5rem;
     display: flex;
     align-items: center;
     font-weight: bold;
@@ -476,7 +474,7 @@ main.general > picture#imgCabecera > img{
     padding-top: .5rem;
 }
 
-#div-menu > p:nth-child(7){
+#div-menu > p:last-child{
     margin-top: auto;
 }
 
@@ -539,7 +537,6 @@ header#cabecera-acceso > nav > svg{
 }
 
 main#main-acceso{
-    height: 75vh;
     width: 100%;
     display: flex;
     flex-flow: column;
@@ -600,3 +597,67 @@ main#main-acceso > div#div-iniciasesion > form > button{
     border-radius: 10px;
 }
 
+/* ===== usuarioDesplegado.html ===== */
+#div-menu-usuario{
+    background-image: url("../images/futbol-noche.jpg");
+    background-position: calc(50% + 10px) top;
+    width: 100%;
+    height: 75vh;
+    padding: 1rem;
+    padding-top: 2rem;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-flow: column;
+}
+
+#div-menu-usuario > p{
+    font-weight: bold;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding-top: .5rem;
+    color: white;
+}
+
+#div-menu-usuario > p:last-child{
+    margin-top: auto;
+}
+
+#div-menu-usuario > p > svg{
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+/* ===== cambiarDatos.html ===== */
+#btnGuardarCambios{
+    border: none;
+    border-radius: 5px;
+    height: 2.5rem;
+    width: 12.5rem;
+    background-color: #085927;
+    color: white;
+}
+
+#p-btnGuardarCambios{
+    justify-content: center;
+}
+
+/* ===== cambioContraseña.html ===== */
+#btnCambiarContrasenna{
+    border: none;
+    border-radius: 5px;
+    height: 2.5rem;
+    width: 12.5rem;
+    background-color: #085927;
+    color: white;
+}
+
+#p-btnCambiarContrasenna{
+    display: flex;
+    justify-content: center;
+}
+
+#pwdOlvidada{
+    text-align: center;
+}
