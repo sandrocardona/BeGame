@@ -479,3 +479,33 @@ main.general > picture#imgCabecera > img{
     padding-right: 2rem;
     padding-left: 2rem;
 }
+
+/* ===== sobrelocampos.html ===== */
+
+.tarjeta-explicativa{
+    width: 90vw;
+    height: 40vh;
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.tarjeta-explicativa > h2{
+    border-bottom: 2px solid black;
+}
+
+.tarjeta-explicativa > picture{
+    width: calc(100% );
+    height: 50%;
+    margin-bottom: 1rem;
+}
+
+.tarjeta-explicativa > picture > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
