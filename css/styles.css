@@ -198,8 +198,13 @@ div#socialMedia-svg{
     align-items: center;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: #333333;
+}
+
+div#socialMedia-svg > svg{
+    width: 1.25rem;
+    height: auto;
 }
 
 /* ==================== FOOTER ==================== */
@@ -507,5 +512,91 @@ main.general > picture#imgCabecera > img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* ===== pantalla de acceso ===== */
+header#cabecera-acceso{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    background-color: #085927;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+}
+
+header#cabecera-acceso > nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header#cabecera-acceso > nav > svg{
+    padding-top: 4rem;
+    width: 8rem;
+    height: auto;
+}
+
+main#main-acceso{
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #085927;
+    color: white;
+}
+
+main#main-acceso > div#div-iniciasesion{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#h2-iniciasesion{
+    padding: 1rem;
+    color: #FFF963;
+}
+
+#link-iniciasesion{
+    color: #FFF963;
+}
+
+.p-linea{
+    position: relative;
+    line-height: 3;
+    padding: 0.5rem;
+    width: 70%;
+}
+
+.p-linea::after, .p-linea::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: calc(10% + 1rem);
+    height: 1px; /* Grosor de la línea */
+    background-color: white;
+}
+
+.p-linea::before {
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.p-linea::after {
+    right: 0;
+    transform: translateY(-50%);
+}
+
+main#main-acceso > div#div-iniciasesion > form > button{
+    width: 15rem;
+    height: 3rem;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
