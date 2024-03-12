@@ -29,4 +29,19 @@ $(document).ready(function(){
             var mensaje = "¡Formulario enviado con éxito!";
             localStorage.setItem('mensaje', mensaje);
         })
+
+    /* mostrar menú */
+    let menu = true;
+    $("#menu-toggle-btn").on("click", function(e){
+
+        if(menu){
+            /* desplazar menu */
+            $("#contenedor-menu").slideDown();
+        }
+        else{
+            /* desplazar menu */
+            $("#contenedor-menu").slideUp();
+        }
+        menu = !menu;
+    })
     })
