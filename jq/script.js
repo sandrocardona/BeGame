@@ -33,7 +33,7 @@ $(document).ready(function(){
     /* mostrar menú */
     let menu = true;
     $("#menu-toggle-btn").on("click", function(e){
-
+        $(this).toggleClass("open");
         if(menu){
             /* desplazar menu */
             $("#contenedor-menu").slideDown();
