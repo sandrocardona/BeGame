@@ -31,17 +31,34 @@ $(document).ready(function(){
         })
 
     /* mostrar menú */
-    let menu = true;
+/*     let menu = true;
     $("#menu-toggle-btn").on("click", function(e){
         $(this).toggleClass("open");
         if(menu){
-            /* desplazar menu */
             $("#contenedor-menu").slideDown();
         }
         else{
-            /* desplazar menu */
             $("#contenedor-menu").slideUp();
         }
         menu = !menu;
+    }) */
+
+        /* mostrar menú */
+        $("#menu-toggle-btn").on("click", function(e){
+            if($(this).hasClass("open")){
+                $("#contenedor-menu").slideUp();
+                $(this).removeClass();
+            }
+            else{
+                $(this).toggleClass("open");
+                $("#contenedor-menu").slideDown();
+            }
+        })
+
+    $(document).on("scroll", function(){
+        if($("#menu-toggle-btn").hasClass("open")){
+            $("#contenedor-menu").stop(true).slideUp();
+            $("#menu-toggle-btn").removeClass();
+        }
     })
     })
