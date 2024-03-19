@@ -26,22 +26,9 @@ $(document).ready(function(){
 
         $("#btnEnviar").click(function(){
             // Guardar el mensaje en localStorage
-            var mensaje = "¡Formulario enviado con éxito!";
+            var mensaje = "¡El partido se ha añadido a Mis partidos!";
             localStorage.setItem('mensaje', mensaje);
         })
-
-    /* mostrar menú */
-/*     let menu = true;
-    $("#menu-toggle-btn").on("click", function(e){
-        $(this).toggleClass("open");
-        if(menu){
-            $("#contenedor-menu").slideDown();
-        }
-        else{
-            $("#contenedor-menu").slideUp();
-        }
-        menu = !menu;
-    }) */
 
         /* mostrar menú */
         $("#menu-toggle-btn").on("click", function(e){
