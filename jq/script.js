@@ -33,12 +33,12 @@ $(document).ready(function(){
         /* mostrar menú */
         $("#menu-toggle-btn").on("click", function(e){
             if($(this).hasClass("open")){
-                $("#contenedor-menu").slideUp();
+                $("#contenedor-menu").slideUp("slow");
                 $(this).removeClass();
             }
             else{
                 $(this).toggleClass("open");
-                $("#contenedor-menu").slideDown();
+                $("#contenedor-menu").slideDown("slow");
             }
         })
 
