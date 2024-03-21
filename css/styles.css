@@ -410,7 +410,7 @@ main.general > picture#imgCabecera > img{
 /* tarjetas de partidos */
 .tarjeta-partidos{
     border: 2px solid black;
-    width: 20rem;
+    width: 18rem;
     height: 10rem;
     display: flex;
     flex-flow: row nowrap;
@@ -453,8 +453,8 @@ main.general > picture#imgCabecera > img{
 /* =============== añadirpartido.html =============== */
 .añadir-partido{
     border: 2px solid black;
-    width: 80vw;
-    height: 20vh;
+    width: 18rem;
+    height: 10rem;
     display: flex;
     flex-flow: column;
     text-align: center;

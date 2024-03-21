@@ -26,7 +26,7 @@ $(document).ready(function(){
 
         $("#btnEnviar").click(function(){
             // Guardar el mensaje en localStorage
-            var mensaje = "¡El partido se ha añadido a Mis partidos!";
+            var mensaje = "¡Formulario enviado!";
             localStorage.setItem('mensaje', mensaje);
         })
 
