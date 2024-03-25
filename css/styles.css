@@ -526,9 +526,9 @@ main.general > picture#imgCabecera > img{
     display: flex;
     flex-flow: column;
     padding: 1rem;
-    padding: 1rem;
     border-radius: 10px;
     font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .tarjeta-explicativa > h2{

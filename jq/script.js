@@ -13,6 +13,44 @@ $(document).ready(function(){
         window.location.href = "../index.html";
     })
 
+    /* === MENU === */
+        /* pagina principal */
+        $("#div-menu > ul > li#pagina-principal").on("click", function(){
+            window.location.href = "../index.html";
+        })
+
+        /* buscar partido */
+        $("#div-menu > ul > li#buscar-partido").on("click", function(){
+            window.location.href = "../vistas/partidosDisponibles.html";
+        })
+
+        /* crear partido */
+        $("#div-menu > ul > li#crear-partido").on("click", function(){
+            window.location.href = "../index.html";
+        })
+
+        /* mi cuenta */
+        $("#div-menu > ul > li#mi-cuenta").on("click", function(){
+            window.location.href = "../vistas/infoCuenta.html";
+        })
+
+        /* contacto */
+        $("#div-menu > ul > li#contacto").on("click", function(){
+            $('html, body').animate({
+                scrollTop: $('footer').offset().top - 60,
+            }, 1000)
+        })
+
+        /* sobre los campos */
+        $("#div-menu > ul > li#sobre-los-campos").on("click", function(){
+            window.location.href = "../vistas/sobreloscampos.html";
+        })
+
+        /* cerrar sesión */
+        $("#div-menu > ul > li#cerrar-sesion").on("click", function(){
+            window.location.href = "../vistas/pantallaAcceso.html";
+        })
+
     /* Mostrar mensaje al clickar boton Enviar en footer */
          // Recuperar el mensaje almacenado en localStorage al cargar la página
         var mensajeGuardado = localStorage.getItem('mensaje');
@@ -33,12 +71,12 @@ $(document).ready(function(){
         /* mostrar menú */
         $("#menu-toggle-btn").on("click", function(e){
             if($(this).hasClass("open")){
-                $("#contenedor-menu").slideUp("slow");
+                $("#contenedor-menu").stop(true).slideUp("slow");
                 $(this).removeClass();
             }
             else{
                 $(this).toggleClass("open");
-                $("#contenedor-menu").slideDown("slow");
+                $("#contenedor-menu").stop(true).slideDown("slow");
             }
         })
 
