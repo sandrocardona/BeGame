@@ -496,8 +496,8 @@ main.general > picture#imgCabecera > img{
 /* partidoannadido.html */
 .partido-annadido{
     border: 2px solid black;
-    width: 80vw;
-    height: 20vh;
+    width: 18rem;
+    height: 10rem;
     display: flex;
     flex-flow: column;
     text-align: center;
