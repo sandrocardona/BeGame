@@ -712,10 +712,63 @@ main#main-acceso > div#div-iniciasesion > form > button{
 /* ========================= VERSION ESCRITORIO ========================= */
 
 @media (min-width: 800px) {
-    footer{
+/*     footer{
         display: flex;
         flex-flow: row wrap;
         align-items: center;
         background-color: #333333;
     }
+
+    footer > nav{
+        
+    }
+
+    footer > div#form-footer{
+        flex: 30%;
+        order:3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer > div#links-footer{
+        flex: 30%;
+        height: 30rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        order: 2;
+    }
+
+    footer > div#form-footer > h2{
+        width: 75%;
+    }
+
+    footer > div#form-footer > form > p{
+        width: 75%;
+    }
+    footer > div#form-footer > form > p#p-boton-form{
+        width: 75%;
+    }
+
+    footer > div#links-footer > ul {
+        width: 50%;
+        height: 50%;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer > div#links-footer > ul > li{
+        width: 100%;
+        height: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        color: white;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+    } */
   }
