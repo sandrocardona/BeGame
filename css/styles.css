@@ -137,6 +137,7 @@ header#cabecera > nav#logo > svg{
     text-align: left;
     padding-left: 1rem;
     height: 5vh;
+    width: 100%;
     top: 15vh;
     left: 0;
 }
@@ -233,6 +234,7 @@ main > form > p.p-inputs{
 main > form > p.p-inputs > input{
     height: 2.5rem;
     width: 65vw;
+    max-width: 350px;
     border: none;
     border-bottom: 1px solid #4A25CF;
     padding-left: 1rem;
@@ -300,6 +302,7 @@ footer > div#form-footer > form{
     display: flex;
     flex-flow: column;
     align-items: center;
+
 }
 
 footer > div#form-footer > form > p > input{
@@ -308,6 +311,7 @@ footer > div#form-footer > form > p > input{
     border: none;
     border-radius: 5px;
     padding-left: 1rem;
+    max-width: 350px;
 }
 footer > div#form-footer > form > p > input::placeholder{
     color: black;
@@ -319,6 +323,7 @@ footer > div#form-footer > form > p > textarea{
     border-radius: 5px;
     padding-left: 1rem;
     padding-top: 1rem;
+    max-width: 350px;
 }
 
 footer > div#form-footer > form > p > textarea::placeholder{
@@ -345,7 +350,7 @@ footer > div#links-footer{
     width: 100%;
     text-align: center;
 }
-footer > div#links-footer > p{
+footer > div#links-footer > ul > li{
     width: 100%;
     padding-top: 0.5rem;
     color: white;
@@ -354,13 +359,13 @@ footer > div#links-footer > p{
     justify-content: center;
 }
 
-footer > div#links-footer > p > svg#svg-copyright{
+footer > div#links-footer > ul > li > svg#svg-copyright{
     width: 1rem;
     height: 1rem;
     margin-right: 1rem;
 }
 
-footer > div#links-footer > p > svg#svg-copyright > path{
+footer > div#links-footer > ul > li > svg#svg-copyright > path{
     width: 100%;
     height: 100%;
     padding-top: 2rem;
@@ -696,3 +701,21 @@ main#main-acceso > div#div-iniciasesion > form > button{
 #pwdOlvidada{
     text-align: center;
 }
+
+
+/* ====== infoCuenta.html ===== */
+#main-gris{
+    background-color: #333333;
+}
+
+
+/* ========================= VERSION ESCRITORIO ========================= */
+
+@media (min-width: 800px) {
+    footer{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        background-color: #333333;
+    }
+  }
