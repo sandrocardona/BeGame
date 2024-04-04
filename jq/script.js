@@ -63,9 +63,16 @@ $(document).ready(function(){
         }
 
         $("#btnEnviar").click(function(){
-            // Guardar el mensaje en localStorage
-            var mensaje = "¡Formulario enviado!";
-            localStorage.setItem('mensaje', mensaje);
+
+            if(email === "" || nombre === ""){
+                // Guardar el mensaje en localStorage
+                var mensaje = "¡Formulario enviado!";
+                localStorage.setItem('mensaje', mensaje);
+            } else {
+                // Guardar el mensaje en localStorage
+                var mensaje = "¡Formulario enviado!";
+                localStorage.setItem('mensaje', mensaje);
+            }
         })
 
         /* mostrar menú */
