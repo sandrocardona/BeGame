@@ -171,6 +171,7 @@ header#cabecera > nav#logo > svg{
     padding-top: 1rem;
     margin: 0.5rem 0 0.5rem 0;
     height: 2rem;
+    cursor: pointer;
 }
 
 #div-menu > ul > li:nth-child(7){

@@ -66,7 +66,7 @@ $(document).ready(function(){
 
             if(email === "" || nombre === ""){
                 // Guardar el mensaje en localStorage
-                var mensaje = "¡Formulario enviado!";
+                var mensaje = "¡Email o nombre vacíos!";
                 localStorage.setItem('mensaje', mensaje);
             } else {
                 // Guardar el mensaje en localStorage
