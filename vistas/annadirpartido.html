@@ -317,16 +317,16 @@
 			<h2>¿Tienes alguna duda?</h2>
 			<form action="index.html" method="get">
 				<p>
-					<input class="userInput" type="text" placeholder="Email">
+					<input class="userInput" name="email" type="email" placeholder="Email" required>
 				</p>
 				<p>
-					<input class="userInput" type="text" placeholder="Nombre">
+					<input class="userInput" name="nombre" type="text" placeholder="Nombre" required>
 				</p>
 				<p>
-					<textarea name="" id="" cols="30" rows="10" placeholder="¿Qué necesitas?"></textarea>
+					<textarea name="userComment" id="userComment" cols="30" rows="10" placeholder="¿Qué necesitas?"></textarea>
 				</p>
 				<p id="p-boton-form">
-					<button class="userInput" type="submit" id="btnEnviar" class="btnFooter">Enviar</button>
+					<button type="submit" id="btnEnviar" class="btnFooter">Enviar</button>
 				</p>
 			</form>
 		</div>

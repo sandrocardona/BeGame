@@ -64,13 +64,16 @@ $(document).ready(function(){
 
         $("#btnEnviar").click(function(){
 
+            var email = $("input[name='email']").val();
+            var nombre = $("input[name='nombre']").val();
+
             if(email === "" || nombre === ""){
                 // Guardar el mensaje en localStorage
                 var mensaje = "¡Email o nombre vacíos!";
                 localStorage.setItem('mensaje', mensaje);
             } else {
                 // Guardar el mensaje en localStorage
-                var mensaje = "¡Formulario enviado!";
+                var mensaje = "¡Formulario enviado correctamente!";
                 localStorage.setItem('mensaje', mensaje);
             }
         })

@@ -268,16 +268,29 @@ main > form > p#p-botones > button{
 
 /* social media icon */
 nav.socialMedia-svg{
-    width: 100%;
+/*     width: 100%; */
     height: 7.5vh;
-    align-items: center;
+/*     align-items: center; */
+    flex: 1;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: #333333;
 }
 
-nav.socialMedia-svg > svg{
+nav.socialMedia-svg > ul#ulSocialMedia{
+    display: flex;
+    flex: 100%;
+    padding-left: 0;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+nav.socialMedia-svg > ul#ulLinks{
+    display: none;
+}
+
+nav.socialMedia-svg > ul#ulSocialMedia > svg{
     width: 1.25rem;
     height: auto;
 }
@@ -290,7 +303,7 @@ nav.socialMedia-svg > svg > path{
 footer{
     display: flex;
     flex-flow: column;
-    align-items: center;
+/*     align-items: center; */
     background-color: #333333;
 }
 
@@ -312,7 +325,7 @@ footer > div#form-footer > form > p > input{
     border: none;
     border-radius: 5px;
     padding-left: 1rem;
-    max-width: 350px;
+    max-width: 22rem;
 }
 footer > div#form-footer > form > p > input::placeholder{
     color: black;
@@ -712,21 +725,55 @@ main#main-acceso > div#div-iniciasesion > form > button{
 
 /* ========================= VERSION ESCRITORIO ========================= */
 
-@media (min-width: 800px) {
-/*     footer{
+@media (min-width: 1024px) {
+    footer{
         display: flex;
         flex-flow: row wrap;
         align-items: center;
         background-color: #333333;
     }
 
-    footer > nav{
-        
+    footer > nav.socialMedia-svg{
+        flex: 49%;
+/*         height: 100%; */
+/*         align-self: flex-start; */
+        align-items: stretch;
+        display: flex;
+        flex-flow: column;
+    }
+
+    footer > nav.socialMedia-svg > ul#ulSocialMedia{
+
+    }
+
+    nav.socialMedia-svg > ul#ulLinks{
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer > nav.socialMedia-svg > ul#ulLinks > li{
+        width: 80%;
+        height: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        color: white;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+    }
+
+    footer > nav.socialMedia-svg > ul#ulLinks > li:nth-last-child(){
+        top: auto;
     }
 
     footer > div#form-footer{
-        flex: 30%;
-        order:3;
+        flex: 50%;
+        order:2;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -734,12 +781,7 @@ main#main-acceso > div#div-iniciasesion > form > button{
     }
 
     footer > div#links-footer{
-        flex: 30%;
-        height: 30rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        order: 2;
+    display: none;
     }
 
     footer > div#form-footer > h2{
@@ -753,23 +795,4 @@ main#main-acceso > div#div-iniciasesion > form > button{
         width: 75%;
     }
 
-    footer > div#links-footer > ul {
-        width: 50%;
-        height: 50%;
-        margin: 0;
-        padding: 0;
-        align-items: center;
-        justify-content: center;
-    }
-
-    footer > div#links-footer > ul > li{
-        width: 100%;
-        height: 2rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        color: white;
-        display: flex;
-        align-items: left;
-        justify-content: left;
-    } */
   }
