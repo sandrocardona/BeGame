@@ -9,6 +9,14 @@ body{
     padding: 0;
 }
 
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
 /* ======================================== css principal ======================================== */
 
 /* GENERAL */
@@ -159,7 +167,7 @@ header#cabecera > nav#logo > svg{
 #div-menu > ul{
     display: flex;
     flex-flow: column;
-    height: 68vh;
+    height: 68.75vh;
     margin: 0;
 }
 
@@ -186,6 +194,10 @@ header#cabecera > nav#logo > svg{
 
 #div-menu > nav.socialMedia-svg{
     margin-top: auto;
+}
+
+#div-menu > nav.socialMedia-svg > svg{
+    width: 1.25rem;
 }
 
 /* === main === */
@@ -268,9 +280,7 @@ main > form > p#p-botones > button{
 
 /* social media icon */
 nav.socialMedia-svg{
-/*     width: 100%; */
     height: 7.5vh;
-/*     align-items: center; */
     flex: 1;
     display: flex;
     flex-flow: row nowrap;
@@ -281,7 +291,9 @@ nav.socialMedia-svg{
 nav.socialMedia-svg > ul#ulSocialMedia{
     display: flex;
     flex: 100%;
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
+    height: 7.5vh;
     flex-flow: row nowrap;
     justify-content: space-around;
 }
@@ -290,7 +302,11 @@ nav.socialMedia-svg > ul#ulLinks{
     display: none;
 }
 
-nav.socialMedia-svg > ul#ulSocialMedia > svg{
+nav.socialMedia-svg > ul#ulSocialMedia > li{
+    display: flex;
+}
+
+nav.socialMedia-svg > ul#ulSocialMedia > li > svg{
     width: 1.25rem;
     height: auto;
 }
@@ -303,7 +319,6 @@ nav.socialMedia-svg > svg > path{
 footer{
     display: flex;
     flex-flow: column;
-/*     align-items: center; */
     background-color: #333333;
 }
 
@@ -350,7 +365,7 @@ footer > div#form-footer > form > p#p-boton-form{
     align-items: left;
 }
 
-footer > div#form-footer > form > p#p-boton-form > button{
+footer > div#form-footer > form > button{
 border: none;
 border-radius: 5px;
 height: 2rem;
@@ -361,27 +376,21 @@ color: black;
 
 /* links del formulario */
 footer > div#links-footer{
-    width: 100%;
-    text-align: center;
+   
+   /*  text-align: center; */
 }
 footer > div#links-footer > ul > li{
-    width: 100%;
     padding-top: 0.5rem;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-footer > div#links-footer > ul > li > svg#svg-copyright{
+footer > div#links-footer > ul > li > svg.svg-copyright{
     width: 1rem;
     height: 1rem;
     margin-right: 1rem;
 }
 
-footer > div#links-footer > ul > li > svg#svg-copyright > path{
-    width: 100%;
-    height: 100%;
+footer > div#links-footer > ul > li > svg.svg-copyright > path{
     padding-top: 2rem;
 }
 
@@ -729,42 +738,34 @@ main#main-acceso > div#div-iniciasesion > form > button{
     footer{
         display: flex;
         flex-flow: row wrap;
-        align-items: center;
+/*         align-items: stretch; */
         background-color: #333333;
+        padding-bottom: 1rem;
     }
 
     footer > nav.socialMedia-svg{
-        flex: 49%;
-/*         height: 100%; */
-/*         align-self: flex-start; */
-        align-items: stretch;
+        flex: 1 49%;
         display: flex;
         flex-flow: column;
+
+        border: 1px solid red;
     }
 
     footer > nav.socialMedia-svg > ul#ulSocialMedia{
-
+        display: flex;
     }
 
     nav.socialMedia-svg > ul#ulLinks{
         display: flex;
         flex-flow: column;
-        width: 100%;
-        height: 50%;
         margin: 0;
-        align-items: center;
-        justify-content: center;
+        border: 1px solid palevioletred;
     }
 
     footer > nav.socialMedia-svg > ul#ulLinks > li{
-        width: 80%;
-        height: 2rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
         color: white;
-        display: flex;
-        align-items: left;
-        justify-content: left;
     }
 
     footer > nav.socialMedia-svg > ul#ulLinks > li:nth-last-child(){
@@ -780,19 +781,39 @@ main#main-acceso > div#div-iniciasesion > form > button{
         justify-content: center;
     }
 
+    footer > div#form-footer > form{
+        max-width: 100%;
+    }
+
     footer > div#links-footer{
     display: none;
     }
 
     footer > div#form-footer > h2{
-        width: 75%;
     }
 
     footer > div#form-footer > form > p{
-        width: 75%;
-    }
-    footer > div#form-footer > form > p#p-boton-form{
-        width: 75%;
     }
 
   }
+
+
+  /* links del formulario */
+footer > div#links-footer{
+   
+   /*  text-align: center; */
+}
+footer > div#links-footer > ul > li{
+    padding-top: 0.5rem;
+    color: white;
+}
+
+footer > div#links-footer > ul > li > svg.svg-copyright{
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1rem;
+}
+
+footer > div#links-footer > ul > li > svg.svg-copyright > path{
+    padding-top: 2rem;
+}
