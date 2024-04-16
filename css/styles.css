@@ -377,11 +377,11 @@ color: black;
 /* links del formulario */
 footer > div#links-footer{
    
-   /*  text-align: center; */
 }
 footer > div#links-footer > ul > li{
     padding-top: 0.5rem;
     color: white;
+    text-align: center;
 }
 
 footer > div#links-footer > ul > li > svg.svg-copyright{
@@ -796,24 +796,3 @@ main#main-acceso > div#div-iniciasesion > form > button{
     }
 
   }
-
-
-  /* links del formulario */
-footer > div#links-footer{
-   
-   /*  text-align: center; */
-}
-footer > div#links-footer > ul > li{
-    padding-top: 0.5rem;
-    color: white;
-}
-
-footer > div#links-footer > ul > li > svg.svg-copyright{
-    width: 1rem;
-    height: 1rem;
-    margin-right: 1rem;
-}
-
-footer > div#links-footer > ul > li > svg.svg-copyright > path{
-    padding-top: 2rem;
-}
