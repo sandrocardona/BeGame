@@ -210,10 +210,22 @@ main{
     align-items: center;
 }
 /* imagen */
+/* main > picture#imgCabecera{
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+}
+
+main > picture#imgCabecera > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
 main > picture#imgCabecera{
     width: calc(100% + 2rem);
     margin-left: -2rem;
-    height: 20%;
+    height: 17.5vh;
 }
 
 main > picture#imgCabecera > img{
@@ -221,6 +233,8 @@ main > picture#imgCabecera > img{
     height: 100%;
     object-fit: cover;
 }
+
+
 
 /* titulo */
 main > h1{
@@ -280,7 +294,7 @@ main > form > p#p-botones > button{
 
 /* social media icon */
 nav.socialMedia-svg{
-    height: 7.5vh;
+/*     height: 7.5vh; */
     flex: 1;
     display: flex;
     flex-flow: row nowrap;
@@ -747,29 +761,42 @@ main#main-acceso > div#div-iniciasesion > form > button{
         flex: 1 49%;
         display: flex;
         flex-flow: column;
-
-        border: 1px solid red;
     }
 
     footer > nav.socialMedia-svg > ul#ulSocialMedia{
         display: flex;
+        flex: 1;
     }
 
     nav.socialMedia-svg > ul#ulLinks{
+        padding-top: 2rem;
         display: flex;
         flex-flow: column;
         margin: 0;
-        border: 1px solid palevioletred;
+        flex: 6;
     }
 
     footer > nav.socialMedia-svg > ul#ulLinks > li{
+        margin-left: 2.5rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
         color: white;
+        height: 2rem;
     }
 
-    footer > nav.socialMedia-svg > ul#ulLinks > li:nth-last-child(){
-        top: auto;
+    footer > nav.socialMedia-svg > ul#ulLinks > li > svg{
+        width: 1.75rem;
+        height: auto;
+
+    }
+
+    footer > nav.socialMedia-svg > ul#ulLinks > li:nth-child(4){
+        display: flex;
+        align-items: center;
+    }
+
+    footer > nav.socialMedia-svg > ul#ulLinks > li:nth-child(4) > svg{
+        margin-right: 1rem;
     }
 
     footer > div#form-footer{
@@ -790,9 +817,57 @@ main#main-acceso > div#div-iniciasesion > form > button{
     }
 
     footer > div#form-footer > h2{
+        padding-top: 0.5rem;
     }
 
-    footer > div#form-footer > form > p{
+    main > picture#imgCabecera{
+
+    }
+    
+    main > picture#imgCabecera > img{
+
     }
 
   }
+
+  @media (min-width: 600px) {
+
+    main > h1{
+        color: white;
+    }
+
+    main > picture#imgCabecera{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        position: absolute;
+        z-index: -1;
+    }
+    
+    main > picture#imgCabecera > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    main > form > p.p-inputs{
+        background: none;
+    }
+
+    main > form > p.p-inputs > input{
+        background: none;
+        border-bottom: 1px solid white;
+    }
+
+    main > form > p.p-inputs > input::placeholder{
+        color: white;
+    }
+
+    main > form > p.p-inputs > svg{
+        border-bottom: 1px solid white;
+    }
+
+    main > form > p.p-inputs > svg > path{
+        
+    }
+
+
