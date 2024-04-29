@@ -29,6 +29,7 @@ svg{
 header#cabecera{
     width: 100%;
     height: 15vh;
+    min-height: 6rem;
     display: flex;
     background-color: #333333;
     justify-content: space-between;
@@ -205,6 +206,7 @@ header#cabecera > nav#logo > svg{
 main{
     padding-top: 15vh;
     height: 77.5vh;
+    min-height: 30rem;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -535,8 +537,19 @@ main.general > picture#imgCabecera > img{
     color: white;
 }
 
+/* crearPartido.html */
+
+main#main-crearpartido{
+    height: 77.5vh;
+    min-height: 35rem;
+}
+
 #txt-p-crearpartido{
     padding-top: 1.5rem;
+    margin-bottom: 0;
+}
+#id-annadir-partido{
+    margin-top: 0;
 }
 
 /* partidoannadido.html */
@@ -565,6 +578,10 @@ main.general > picture#imgCabecera > img{
 }
 
 /* ===== sobrelocampos.html ===== */
+
+main#main-sobreloscampos{
+    height: 100%;
+}
 
 .tarjeta-explicativa{
     width: 90vw;
@@ -743,6 +760,68 @@ main#main-acceso > div#div-iniciasesion > form > button{
     text-align: center;
 }
 
+.h1-menu{
+    color: white;
+    background-color: #333333;
+    margin: 0;
+    text-align: left;
+    padding-left: 1rem;
+    height: 5vh;
+    width: 100%;
+    top: 15vh;
+    left: 0;
+}
+
+
+.div-menu{
+    background-color: white;
+    width: 100vw;
+    height: 80vh;
+    top: 20vh;
+    left: 0;
+    padding-top: 2rem;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-flow: column;
+}
+
+.div-menu > ul{
+    display: flex;
+    flex-flow: column;
+    height: 68.75vh;
+    margin: 0;
+}
+
+.div-menu > ul > li{
+    font-weight: bold;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding-top: 1rem;
+    margin: 0.5rem 0 0.5rem 0;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.div-menu > ul > li:nth-child(7){
+    margin-top: auto;
+    margin-bottom: 2rem;
+}
+
+.div-menu > ul > li > svg{
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.div-menu > nav.socialMedia-svg{
+    margin-top: auto;
+}
+
+.div-menu > nav.socialMedia-svg > svg{
+    width: 1.25rem;
+}
+
 
 /* ====== infoCuenta.html ===== */
 #main-gris{
@@ -825,7 +904,7 @@ main#main-acceso > div#div-iniciasesion > form > button{
     }
 
     main > picture#imgCabecera{
-
+        min-height: 30rem;
     }
     
     main > picture#imgCabecera > img{
@@ -917,5 +996,29 @@ main#main-acceso > div#div-iniciasesion > form > button{
         height: 100%;
     }
 
+    /* cambioContrasenna.html */
+    .h1-cambiar-contraseña{
+        color: black;
+    }
 
+    .form-cambio-contrasenna{
+        background-color: white;
+    }
+
+    main > form > p.p-inputs > input.userInput-cambiocontrasenna{
+        color: #4A25CF;
+        height: 2.5rem;
+        width: 65vw;
+        max-width: 350px;
+        border-bottom: 1px solid #4A25CF;
+        padding-left: 1rem
+    }
+    main > form > p.p-inputs > input.userInput-cambiocontrasenna::placeholder{
+        color: #4A25CF;
+    }
+
+    /* crearPartido.html */
+    main#main-crearPartido{
+        
+    }
   }
