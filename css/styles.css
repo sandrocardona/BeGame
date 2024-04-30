@@ -540,8 +540,7 @@ main.general > picture#imgCabecera > img{
 /* crearPartido.html */
 
 main#main-crearpartido{
-    height: 77.5vh;
-    min-height: 35rem;
+    height: 100%;
 }
 
 #txt-p-crearpartido{
@@ -1018,7 +1017,7 @@ main#main-acceso > div#div-iniciasesion > form > button{
     }
 
     /* crearPartido.html */
-    main#main-crearPartido{
-        
+    main#main-crearpartido > .tarjeta-partidos, #id-annadir-partido{
+        background-color: rgba(255, 255, 255, 1)
     }
   }
