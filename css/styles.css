@@ -537,6 +537,10 @@ main.general > picture#imgCabecera > img{
     color: white;
 }
 
+main#main-annadirpartido{
+    height: 100%;
+}
+
 /* crearPartido.html */
 
 main#main-crearpartido{
