@@ -99,4 +99,11 @@ $(document).ready(function(){
             $("#menu-toggle-btn").removeClass();
         }
     })
+
+    /* infoCuenta.html */
+    $("#btn-cambiarmisdatos").on("click", function(){
+        window.location.href = "../vistas/sobreloscampos.html";
     })
+
+
+    }) //Document
