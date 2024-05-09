@@ -31,8 +31,11 @@ $(document).ready(function(){
 
         /* mi cuenta */
         $("#div-menu > ul > li#mi-cuenta").on("click", function(){
-            window.location.href = "../vistas/infoCuenta.html";
+            window.location.href = "../vistas/usuarioDesplegado.html";
         })
+
+            /* (al clicar en mi cuenta) */
+            
 
         /* contacto */
         $("#div-menu > ul > li#contacto").on("click", function(){

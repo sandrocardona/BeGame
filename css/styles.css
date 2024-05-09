@@ -541,6 +541,9 @@ main#main-annadirpartido{
     height: 100%;
 }
 
+#main-annadirpartido > .tarjeta-partidos, .añadir-partido{
+    background-color: rgba(255, 255, 255, 1) 
+}
 /* crearPartido.html */
 
 main#main-crearpartido{
@@ -556,6 +559,10 @@ main#main-crearpartido{
 }
 
 /* partidoannadido.html */
+
+#main-partidoannadido{
+    height: 100%;
+}
 .partido-annadido{
     border: 2px solid black;
     width: 18rem;
@@ -621,7 +628,7 @@ header#cabecera-acceso{
     background-color: #085927;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: fixed;
 }
 
 header#cabecera-acceso > nav{
@@ -649,6 +656,7 @@ main#main-acceso{
 
 main#main-acceso > div#div-iniciasesion{
     width: 100%;
+    max-width: 600px;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -999,6 +1007,10 @@ main#main-acceso > div#div-iniciasesion > form > button{
         height: 100%;
     }
 
+    main#main-partidosdisponibles > .tarjeta-partidos, .añadir-partido{
+        background-color: rgba(255, 255, 255, 1)
+    }
+
     /* cambioContrasenna.html */
     .h1-cambiar-contraseña{
         color: black;
@@ -1022,6 +1034,12 @@ main#main-acceso > div#div-iniciasesion > form > button{
 
     /* crearPartido.html */
     main#main-crearpartido > .tarjeta-partidos, #id-annadir-partido{
+        background-color: rgba(255, 255, 255, 1)
+    }
+
+
+    /* partidoannadido.html */
+    #main-partidoannadido > .tarjeta-partidos, .partido-annadido{
         background-color: rgba(255, 255, 255, 1)
     }
   }
