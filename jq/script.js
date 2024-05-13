@@ -102,8 +102,17 @@ $(document).ready(function(){
 
     /* infoCuenta.html */
     $("#btn-cambiarmisdatos").on("click", function(){
-        window.location.href = "../vistas/sobreloscampos.html";
+        window.location.href = "../vistas/cambiarDatos.html";
     })
 
+    /* usuarioDesplegado.html */
+
+    $("#li-mispartidos").on("click", function(){
+        window.location.href = "../vistas/misPartidos.html";
+    })
+
+    $("#li-informaciondemicuenta").on("click", function(){
+        window.location.href = "../vistas/infoCuenta.html";
+    })
 
     }) //Document

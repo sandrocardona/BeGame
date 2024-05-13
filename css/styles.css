@@ -745,6 +745,14 @@ main#main-acceso > div#div-iniciasesion > form > button{
     padding-left: 2rem;
 }
 
+#li-mispartidos{
+    cursor: pointer;
+}
+
+#li-informaciondemicuenta{
+    cursor: pointer;
+}
+
 /* ===== cambiarDatos.html ===== */
 #btnGuardarCambios{
     border: none;
