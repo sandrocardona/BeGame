@@ -767,6 +767,12 @@ main#main-acceso > div#div-iniciasesion > form > button{
     justify-content: center;
 }
 
+#div-cambiarDatos{
+/*     border: 1px solid red; */
+/* Los elementos no caben en el div */
+    max-height: 100%;
+}
+
 /* ===== cambioContraseña.html ===== */
 #btnCambiarContrasenna{
     border: none;
@@ -858,6 +864,21 @@ main#main-acceso > div#div-iniciasesion > form > button{
     cursor: pointer;
 }
 
+/* Política de cookies */
+
+#main-politica-cookies{
+    color: black;
+}
+
+#h1-politica-cookies{
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+
+#label-politicas{
+    display: none;
+}
 
 /* ========================= VERSION ESCRITORIO ========================= */
 
