@@ -880,6 +880,17 @@ main#main-acceso > div#div-iniciasesion > form > button{
     display: none;
 }
 
+#cerrar-sesion{
+    cursor: pointer;
+}
+
+/* misPartidos.html */
+#main-mispartidos{
+    height: 100%;
+}
+
+
+
 /* ========================= VERSION ESCRITORIO ========================= */
 
 @media (min-width: 1024px) {

@@ -50,7 +50,7 @@ $(document).ready(function(){
         })
 
         /* cerrar sesión */
-        $("#div-menu > ul > li#cerrar-sesion").on("click", function(){
+        $("li#cerrar-sesion").on("click", function(){
             window.location.href = "../vistas/pantallaAcceso.html";
         })
 
