@@ -249,7 +249,7 @@ main > h1{
 
 /* formulario principal */
 main > form{
-    height: 75%;
+    height: 80%;
     display: flex;
     flex-flow: column;
     justify-content: space-evenly;
@@ -269,8 +269,23 @@ main > form > p.p-inputs > input{
     padding-left: 1rem;
 }
 
-main > form > p.p-inputs > input::placeholder{
+/* main > form > p.p-inputs > input::placeholder{
     color: #4A25CF;
+} */
+
+.placeholder-red::placeholder {
+    color: #B50000;
+}
+
+.placeholder-blue::placeholder {
+    color: #4A25CF;
+}
+
+#span-error{
+    height: 1.5rem;
+    margin-left: 1rem;
+    font-weight: bold;
+    color: #B50000;
 }
 
 main > form > p.p-inputs > svg{
@@ -889,7 +904,10 @@ main#main-acceso > div#div-iniciasesion > form > button{
     height: 100%;
 }
 
-
+.error{
+    margin-left: 2rem;
+    color: red;
+}
 
 /* ========================= VERSION ESCRITORIO ========================= */
 
@@ -1012,10 +1030,15 @@ main#main-acceso > div#div-iniciasesion > form > button{
     main > form > p.p-inputs > input{
         background: none;
         border-bottom: 1px solid white;
+        color: white;
     }
 
-    main > form > p.p-inputs > input::placeholder{
+    main > form > p.p-inputs > input.placeholder-blue::placeholder{
         color: white;
+    }
+
+    main > form > p.p-inputs > input.placeholder-red::placeholder{
+        color: #B50000;
     }
 
     main > form > p.p-inputs > svg{

@@ -13,6 +13,18 @@ $(document).ready(function(){
         window.location.href = "../index.html";
     })
 
+    /* inputs index */
+    $(".userInput").on("focusout", function(){
+        let value = $(this).val();
+        if(value === ""){
+            $(this).addClass('placeholder-red').removeClass('placeholder-blue');  // Agrega la clase para cambiar el color del placeholder
+            $("#span-error").text("Campo vacío");  // Establece el texto del mensaje de error
+        } else {
+            $(this).addClass('placeholder-blue').removeClass('placeholder-red');  // Cambia la clase si hay un valor en el input
+            $("#span-error").text("");  // Limpia el mensaje de error si el campo no está vacío
+        }
+    });
+
     /* === MENU === */
         /* pagina principal */
         $("#div-menu > ul > li#pagina-principal").on("click", function(){
