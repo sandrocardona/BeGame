@@ -3,6 +3,13 @@
     font-family: "Inter", sans-serif;
 }
 
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     box-sizing: border-box;
     margin: 0;
@@ -273,11 +280,15 @@ main > form > p.p-inputs > input{
     color: #4A25CF;
 } */
 
-.placeholder-red::placeholder {
+.userInput::placeholder{
+    color: #4A25CF;
+}
+
+main > form > p.p-inputs > input.placeholder-red::placeholder {
     color: #B50000;
 }
 
-.placeholder-blue::placeholder {
+main > form > p.p-inputs > input.placeholder-blue::placeholder {
     color: #4A25CF;
 }
 
@@ -788,6 +799,64 @@ main#main-acceso > div#div-iniciasesion > form > button{
     max-height: 100%;
 }
 
+#cambiar-contraseña{
+    cursor: pointer;
+}
+
+.inputs-cambiar-datos{
+    border: none;
+}
+
+.inputs-cambiar-datos::placeholder{
+    color: black;
+    font-weight: bold;
+}
+
+#div-cambiarDatos{
+    padding: 0;
+    width: 100%;
+}
+
+.div-menu > form{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.div-menu> form > ul{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.div-menu> form > ul > li{
+    font-weight: bold;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding-top: 1rem;
+    margin: 0.5rem 0 0.5rem 0;
+    height: 2rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.div-menu> form > ul > li > svg{
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.div-menu > nav.socialMedia-svg{
+    margin-top: auto;
+}
+
+.div-menu > nav.socialMedia-svg > svg{
+    width: 1.25rem;
+}
+
+
 /* ===== cambioContraseña.html ===== */
 #btnCambiarContrasenna{
     border: none;
@@ -909,13 +978,16 @@ main#main-acceso > div#div-iniciasesion > form > button{
     color: red;
 }
 
-/* === Slider === */
 /** ---------------------------------------
  * Slider 
  ----------------------------------------*/
 
- .contenedor-slider {
-    width: 640px;
+/* Estilo general del contenedor del slider */
+#slider{
+margin: auto;
+}
+.contenedor-slider {
+    width: 50%;
     margin: 40px auto 0;
   }
   
@@ -927,6 +999,7 @@ main#main-acceso > div#div-iniciasesion > form > button{
     background: #FFF;
     border: 5px solid #4b5973;
     overflow: hidden;
+    margin: auto;
   }
   
   .slider-wrapper li {
@@ -949,15 +1022,15 @@ main#main-acceso > div#div-iniciasesion > form > button{
     position: absolute;
     background: #171c24;
     height: 100%;
-    width: 50%;
+/*     width: 30%; */
     left: 10px;
     top: -20px;
     -webkit-transform: rotate(-4deg);
     -ms-transform: rotate(-4deg);
     -o-transform: rotate(-4deg);
     transform: rotate(-4deg);
-    -webkit-box-shadow: 0 0 15px 8px #171c24;
-    box-shadow: 0 0 15px 8px #171c24;
+/*     -webkit-box-shadow: 0 0 15px 8px #171c24;
+    box-shadow: 0 0 15px 8px #171c24; */
   }
   
   .slider-shadow:before {
@@ -977,6 +1050,29 @@ main#main-acceso > div#div-iniciasesion > form > button{
     left: 0;
   }
   
+  .divbotones{
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+  }
+  
+  .btnslider{
+    cursor: pointer;
+    width: 4rem;
+    height: 2.5rem;
+    background: none;
+    border: 3px solid #333333;
+    color: #333333;
+    font-weight: bold;
+    font-size: x-large;
+    border-radius: 5px;
+  }
+
+  .p-slider{
+    margin: 0;
+    padding: 0;
+  }
   
   /**
    * ---[Caption] ---------------------- 
@@ -1021,7 +1117,6 @@ main#main-acceso > div#div-iniciasesion > form > button{
     line-height: 1.4em;
   }
   
-  
   /**
    * ---[Botones-Control] ---------------------- 
    **/
@@ -1055,9 +1150,7 @@ main#main-acceso > div#div-iniciasesion > form > button{
     font-size: 1.6em;
     font-weight: 300;
     margin-top: 80px;
-    font-size: 300;
   }
-  
   
   /** ---------------------------------------
    * Responsive 
@@ -1073,6 +1166,10 @@ main#main-acceso > div#div-iniciasesion > form > button{
   }
   
   @media only screen and (max-width: 535px) {
+    #slider{
+        padding: 0;
+    }
+
     .contenedor-slider {
       padding: 5px;
       width: 100%;
@@ -1080,17 +1177,32 @@ main#main-acceso > div#div-iniciasesion > form > button{
     }
     .slider-wrapper {
       height: 200px;
+      max-width: 90vw;
     }
     .slider-wrapper .caption {
       display: none;
     }
   }
   
-  @media onlyscreen and (max-width: 410px) {
-       .slider-wrapper {
-           height: 160px;
-       }
-   }
+  @media only screen and (max-width: 410px) {
+    #slider{
+        padding: 0;
+    }
+    .contenedor-slider {
+        padding: 5px;
+        width: 100%;
+        margin: 0 0 0 0;
+
+      }
+      .slider-wrapper {
+        height: 160px;
+        max-width: 90vw;
+      }
+      .slider-wrapper .caption {
+        display: none;
+      }
+  }
+  
 
 /* ========================= VERSION ESCRITORIO ========================= */
 
@@ -1278,7 +1390,7 @@ main#main-acceso > div#div-iniciasesion > form > button{
     }
 
     main > form > p.p-inputs > input.userInput-cambiocontrasenna{
-        color: #4A25CF;
+/*         color: #4A25CF; */
         height: 2.5rem;
         width: 65vw;
         max-width: 350px;
@@ -1286,7 +1398,7 @@ main#main-acceso > div#div-iniciasesion > form > button{
         padding-left: 1rem
     }
     main > form > p.p-inputs > input.userInput-cambiocontrasenna::placeholder{
-        color: #4A25CF;
+/*         color: #4A25CF; */
     }
 
     /* crearPartido.html */

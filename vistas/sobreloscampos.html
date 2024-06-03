@@ -15,6 +15,7 @@
         <!-- jQuery y javaScript -->
     	<script src="../jq/jq-library-3.7.1.js"></script>
     	<script src="../jq/script.js"></script>
+		<script src="../jq/slider.js"></script>
     </head>
 <body>
     <!-- CABECERA -->
@@ -158,56 +159,79 @@
 	</div>
     <!-- cuerpo principal -->
     <main class="general" id="main-sobreloscampos">
-        <div id="mensaje"></div>
-		<h1>Sobre los campos</h1>
-        <!-- campo fútbol 11 -->
-        <div class="tarjeta-explicativa">
-            <h2>Fútbol 11</h2>
-            <picture>
-                <img src="../images/futbol11.jpg" alt="campo futbol 11">
-            </picture>
+	<!--Contenedor del slider-->
+	<h1 style="color: black;">Sobre los campos</h1>
+	<section id="slider" class="contenedor-slider">
+		<!-- Botones laterales -->
+
+		<ul class="slider-wrapper">
+		<li class="current-slide">
+			<img src="../images/futbol11.jpg" alt="imagen1">
+			<div class="caption">
+				<div>
+					<h2 class="slider-title">Fútbol 11</h2>
+					<p class="p-slider">11 Jugadores por equipo</p>
+					<p class="p-slider">Césped natural o césped artificial</p>
+					<p class="p-slider">100m x 75m</p>
+				</div>
+			</div>
+		</li>
+
+		<li>
+			<img src="../images/futbol7.webp" alt="imagen2">
+			<div class="caption">
             <div>
-                <p>11 Jugadores por equipo</p>
-                <p>Césped natural o césped artificial</p>
-                <p>100m x 75m</p>
+				<h2 class="slider-title">Fútbol 7</h2>
+                <p class="p-slider">7 Jugadores por equipo</p>
+                <p class="p-slider">Césped natural o césped artificial</p>
+                <p class="p-slider">65m x 40m</p>
             </div>
-        </div>
-        <!-- campo futbol 7 -->
-        <div class="tarjeta-explicativa">
-            <h2>Fútbol 7</h2>
-            <picture>
-                <img src="../images/futbol11.jpg" alt="campo futbol 11">
-            </picture>
-            <div>
-                <p>7 Jugadores por equipo</p>
-                <p>Césped natural o césped artificial</p>
-                <p>65m x 40m</p>
-            </div>
-        </div>
-        <!-- campo fútbol 5 -->
-        <div class="tarjeta-explicativa">
-            <h2>Fútbol 5</h2>
-            <picture>
-                <img src="../images/futbol11.jpg" alt="campo futbol 11">
-            </picture>
-            <div>
-                <p>5 Jugadores por equipo</p>
-                <p>Césped natural o césped artificial</p>
-                <p>40m x 25m</p>
-            </div>
-        </div>
-        <!-- campo fútbol 5 -->
-        <div class="tarjeta-explicativa">
-           <h2>Fútbol sala</h2>
-           <picture>
-               <img src="../images/futbol11.jpg" alt="campo futbol 11">
-           </picture>
-           <div>
-               <p>5 Jugadores por equipo</p>
-               <p>Parqué o pista dura</p>
-               <p>40m x 25m</p>
-           </div>
-        </div>
+		</div>
+		</li>
+
+		<li>
+			<img src="../images/FUTBOL5.jpg" title="" alt="imagen3">
+
+			<div class="caption">
+				<div>
+					<h2 class="slider-title">Fútbol 5</h2>
+					<p class="p-slider">5 Jugadores por equipo</p>
+					<p class="p-slider">Césped natural o césped artificial</p>
+					<p class="p-slider">40m x 25m</p>
+				</div>
+			</div>
+		</li>
+
+		<li>
+			<img src="../images/fubol-sala-futsal.jpg" title="" alt="imagen4">
+
+			<div class="caption">
+				<div>
+					<h2 class="slider-title">Fútbol Sala</h2>
+					<p class="p-slider">5 Jugadores por equipo</p>
+					<p class="p-slider">Parqué o pista dura</p>
+					<p class="p-slider">40m x 25m</p>
+				</div>
+			</div>
+		</li>
+		</ul>
+		<!-- Sombras -->
+		<div class="slider-shadow"></div>
+		
+		<!-- Controles de Navegacion -->
+		<ul id="control-buttons" class="control-buttons">
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+
+		<!-- botones anterior y siguiente -->
+		<div class="divbotones">
+			<button class="btnslider" id="slider-prev">&#9666;</button>
+			<button class="btnslider" id="slider-next">&#9656;</button>
+		</div>
+	</section>
     </main>
 	<!-- FOOTER -->
 	<footer>

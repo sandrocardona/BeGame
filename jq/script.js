@@ -98,10 +98,17 @@ $(document).ready(function(){
             if($(this).hasClass("open")){
                 $("#contenedor-menu").stop(true).slideUp("slow");
                 $(this).removeClass();
+                setTimeout(function() {
+                    $("#slider").css("display", "block"); // Mostrar el slider después de tres segundos
+                }, 500);
             }
             else{
                 $(this).toggleClass("open");
                 $("#contenedor-menu").stop(true).slideDown("slow");
+                console.log("menu abierto");
+                $("#slider").css({
+                    "display": "none"  // Ocultar el slider cuando el menú se abre
+                });
             }
         })
 
@@ -124,6 +131,18 @@ $(document).ready(function(){
     })
 
     $("#li-informaciondemicuenta").on("click", function(){
+        window.location.href = "../vistas/infoCuenta.html";
+    })
+
+    /* cambiarDatos.html */
+
+    $('#cambiar-contraseña').on("click", function(){
+        window.location.href = "../vistas/cambioContrasenna.html";
+    })
+    $('#btnGuardarCambios').on("click", function(){
+        window.location.href = "../vistas/infoCuenta.html";
+    })
+    $('#btnCambiarContrasenna').on("click", function(){
         window.location.href = "../vistas/infoCuenta.html";
     })
 
