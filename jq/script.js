@@ -146,4 +146,28 @@ $(document).ready(function(){
         window.location.href = "../vistas/infoCuenta.html";
     })
 
+    /* consentimientoCookies.html */
+    $('#btnRech').on("click", function(){
+        window.location.href = "../vistas/pantallaAcceso.html";
+    })
+
+    $('#btnAcc').on("click", function(){
+        window.location.href = "../vistas/pantallaAcceso.html";
+    })
+
+    /* iniciarSesion.html */
+    $('#btn-inicio-sesion').on("click", function(){
+        window.location.href = "./index.html";
+    })
+
+    /* #link-iniciasesion */
+    $('#btn-inicio-sesion').on("click", function(){
+        window.location.href = "../vistas/iniciarSesion.html";
+    })
+
+    /* li-cerrar-session */
+    $('.li-cerrar-session').on("click", function(){
+        window.location.href = "../vistas/pantallaAcceso.html";
+    })
+
     }) //Document

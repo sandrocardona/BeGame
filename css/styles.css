@@ -274,6 +274,7 @@ main > form > p.p-inputs > input{
     border: none;
     border-bottom: 1px solid #4A25CF;
     padding-left: 1rem;
+    color: black;
 }
 
 /* main > form > p.p-inputs > input::placeholder{
@@ -615,6 +616,10 @@ main#main-crearpartido{
 
 /* ===== sobrelocampos.html ===== */
 
+#h1-sobre-los-campos{
+    color: black;
+}
+
 main#main-sobreloscampos{
     height: 100%;
 }
@@ -733,6 +738,10 @@ main#main-acceso > div#div-iniciasesion > form > button{
 }
 
 /* ===== usuarioDesplegado.html ===== */
+
+.li-cerrar-session{
+    cursor: pointer;
+}
 #div-menu-usuario{
     background-image: url("../images/futbol-noche.jpg");
     background-position: calc(50% + 10px) top;
@@ -799,7 +808,7 @@ main#main-acceso > div#div-iniciasesion > form > button{
     max-height: 100%;
 }
 
-#cambiar-contraseña{
+#cambiar-contrasena{
     cursor: pointer;
 }
 
@@ -969,6 +978,10 @@ main#main-acceso > div#div-iniciasesion > form > button{
 }
 
 /* misPartidos.html */
+
+#h1-mis-partidos{
+    color: black;
+}
 #main-mispartidos{
     height: 100%;
 }
@@ -988,6 +1001,7 @@ margin: auto;
 }
 .contenedor-slider {
     width: 50%;
+    max-width: 550px;
     margin: 40px auto 0;
   }
   
@@ -1044,8 +1058,8 @@ margin: auto;
   
   .slider-wrapper img {
     position: absolute;
-    max-width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     top: 0;
     left: 0;
   }
@@ -1161,7 +1175,7 @@ margin: auto;
       width: 500px;
     }
     .slider-wrapper {
-      height: 260px;
+/*       height: 260px; */
     }
   }
   
@@ -1176,7 +1190,7 @@ margin: auto;
       margin: 40px 0 0 0;
     }
     .slider-wrapper {
-      height: 200px;
+/*       height: 200px; */
       max-width: 90vw;
     }
     .slider-wrapper .caption {
@@ -1195,14 +1209,77 @@ margin: auto;
 
       }
       .slider-wrapper {
-        height: 160px;
+/*         height: 160px; */
         max-width: 90vw;
       }
       .slider-wrapper .caption {
         display: none;
       }
   }
-  
+
+      /* consentimientoCookies.html */
+    #consentimiento-cookies{
+        width: 100%;
+        background-color: white;
+        color: black;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        filter: blur(0px);
+    }
+
+    #consentimiento-cookies > p#pBtn{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #consentimiento-cookies > p#pBtn > button{
+        height: 2rem;
+        width: 8rem;
+        border-radius: 5px;
+        border: none;
+    }
+    #consentimiento-cookies > p#pBtn > button#btnRech{
+        background-color: black;
+        color: white;
+    }
+
+    #consentimiento-cookies > p#pBtn > button#btnAcc{
+        background-color: #B50000;
+        color: white;
+    }
+
+    .nav-logo{
+        background-color: #085927;
+        display: flex;
+        justify-content: center;
+        padding-top: 5rem;
+        padding-bottom: 0;
+
+    }
+
+    #nav-logo-blur > svg{
+        filter: blur(2px);
+    }
+
+    .main-acceso-blur > #div-iniciasesion{
+        filter: blur(2px);
+    }
+
+    .nav-logo > svg{
+        width: 10rem;
+        height: auto;
+        fill: white;
+    }
+
+    #main-acceso{
+        padding-top: 0;
+    }
+
+    /* iniciarSesion.html */
+    .form-registrarse > p#p-botones > button.btnPequeno#btn-inicio-sesion{
+        width: 8rem;
+    }
 
 /* ========================= VERSION ESCRITORIO ========================= */
 
@@ -1381,7 +1458,7 @@ margin: auto;
     }
 
     /* cambioContrasenna.html */
-    .h1-cambiar-contraseña{
+    .h1-cambiar-contrasena{
         color: black;
     }
 
@@ -1390,7 +1467,7 @@ margin: auto;
     }
 
     main > form > p.p-inputs > input.userInput-cambiocontrasenna{
-/*         color: #4A25CF; */
+        color: black;
         height: 2.5rem;
         width: 65vw;
         max-width: 350px;
@@ -1410,5 +1487,41 @@ margin: auto;
     /* partidoannadido.html */
     #main-partidoannadido > .tarjeta-partidos, .partido-annadido{
         background-color: rgba(255, 255, 255, 1)
+    }
+
+    /* registrarse.html */
+
+    .titulo-negro{
+        color: black;
+    }
+
+    .form-registrarse{
+        background-color: white;
+    }
+
+    .form-registrarse > p.p-inputs{
+        border-bottom: 1px solid #4A25CF;
+    }
+
+    .form-registrarse > p.p-inputs > input{
+        color: black;
+    }
+
+    .form-registrarse > p.p-inputs > svg{
+/*         border-bottom:1px solid #4A25CF; */
+    }
+
+    .form-registrarse > p.p-inputs > svg > path{
+        fill: #4A25CF;
+    }
+
+    .form-registrarse > p#p-botones > button.btnPequeno{
+        border: none;
+        border-radius: 5px;
+        height: 2.5rem;
+        width: 6rem;
+        background-color: #085927;
+        color: white;
+        font-weight: normal;
     }
   }
